@@ -1,0 +1,115 @@
+// HEADER MENU
+// ======================================================================================
+#sidebar {
+
+		li {
+
+			a {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+
+	#lebar {
+		
+			ul {
+				text-decoration: none;
+				list-style: none;
+
+		.widget-title {
+			font-family: $font-sidebar;
+			background: #000;
+			font-size: .9em;
+		    font-weight: 400;
+		    text-align: center;
+		    padding: 5px;
+		    text-transform: uppercase;
+		    letter-spacing: .15em;
+		    color: $white;
+
+
+		    span {
+		        display: block;
+			    border: 1px solid #fff;
+			    padding: 10px;
+					
+					ul {
+						color: #fff;
+					}
+    			}
+			}
+		}
+
+	}
+}
+
+.widget-container {
+
+	ul {
+		padding: 0;
+
+		li {
+		    line-height: 1.8em;
+		    font-size: 14px;
+		    color: $black;
+		    text-decoration: none;
+		    list-style: none;
+		}
+	}
+}
+
+// Khusus sidebar pencarian
+// ======================================================================================
+.screen-reader-text {
+	display: none;
+}
+
+#s {
+	height: 36px;
+	width: 100%;
+}
+
+#searchsubmit {
+	display: none;
+}
+
+
+.widget_categories {
+			
+
+		ul {
+			padding: 0;
+		}
+
+	li {
+	display: inline-block;
+
+	    a {
+		    display: inline-block;
+			border: 1px solid $black;
+			padding: 7px 8px;
+			font-size: 10px !important;     
+			text-transform: uppercase;
+			color: #5aa738;
+			margin: 0 0 5px 0;
+			border-radius: 3px;
+			background: $white;
+
+	    &:hover {
+	    	background: $black;
+	    	color: $white !important;
+	    	}
+	    }
+	}
+}
+
+// Khusus sidebar pencarian
+// ======================================================================================
+td {
+	padding: 5px;
+}
+
+th {
+    text-align: center;
+    background-color: #000;
+   }

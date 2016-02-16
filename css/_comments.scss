@@ -1,0 +1,74 @@
+.post-bottom-section {
+    background-color: $black;
+    padding: 13px;
+
+    h4 {
+    	margin-top: 36px;
+    	color: $white;
+    }
+}
+
+label {
+	color: $white;
+	margin-top: 7px;
+}
+
+input, text {
+	width: 20%;
+	margin-top: 10px;
+	height: 40px;
+	text-transform: uppercase;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: block;
+}
+
+#website.value {
+	display: none;
+}
+
+#message {
+	width: 100%;
+}
+
+.post-bottom-section1 {
+    padding: 10px;
+    margin-top: 31px;
+
+    h4 {
+    	background-color: $black;
+    	color: $white;
+    	padding: 15px;
+    	text-align: center;
+    	text-transform: uppercase;
+
+    	span {
+    		letter-spacing: 0.15em;
+    		border: 1px solid $white;
+    		padding: 6px 260px;
+    	}
+    }
+}
+
+.commentlist {
+	list-style: none;
+	border: 1px solid $black;
+	padding: 12px;
+	background-color: $black;
+
+	.comment-body {
+		border: 1px solid $black;
+		padding: 5px;
+		margin: 5px;
+		background-color: #333;
+		color: $white;
+
+		.fn {
+			font-style: normal;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// HEADER MENU
+// ======================================================================================
+
+#footer {
+	background: $black;
+	height: 40px;
+
+	p {
+		margin-top: 12px;
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			list-style: none;
+			color: $white;
+			opacity: 0.7;
+		}
+	}
+}

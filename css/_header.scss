@@ -1,0 +1,48 @@
+// HEADER MENU
+// ======================================================================================
+#header {
+
+	.navbar-default {
+		background-color: $black;
+		#menu {
+
+			.menu-header {
+				ul {
+					list-style: none;
+					li {
+						display:inline;
+					  	background-color: $black;
+					  	float:left;
+					  	padding:15px;
+					  	margin-top: -10px;
+					  	border-right:solid 1px $black;
+					  	margin-left: -43px;
+    					margin-right: 43px;	
+						
+						&:hover {
+								background-color: $white;
+								transition: all 0.72s ease-in-out;
+
+							a {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// HEADER DESCRIPTION
+// ======================================================================================
+.desnam {
+	
+	.blogtitle {
+		font-family: $font-title;
+		}
+
+		.description {
+			font-family: $font-desc;
+		}
+	}
