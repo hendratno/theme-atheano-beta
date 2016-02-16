@@ -4,6 +4,93 @@
 get_header(); ?>
 
 
+<div class="container">
+    <div class="row">
+     <div class="content col-md-12">
+       <div id="slider-wrap">
+          <div id="slider" class="clearfix">
+               <div id="owl-demo" class="owl-carousel">
+                    <?php 
+                         $args = array('cat' => 10, 'posts_per_page'  => 1);
+                         $the_query = new WP_Query($args);
+
+                         while ($the_query->have_posts()): 
+
+                         $the_query->the_post(); 
+
+                         $excerpt=get_the_excerpt();
+
+                         $intro_article = substr($excerpt,0,200);
+
+                         $intro_article_fix = substr($intro_article, 0, strrpos($intro_article, " ")).'...';
+
+                    ?>
+                         <div class="item">
+                              <a href="<?php the_permalink() ?>">
+                                   <?php the_post_thumbnail(array(978,9999)); ?>
+
+                                   <h1><?php the_title();?></h1>
+                                   <p><?php echo $intro_article_fix; ?></p>
+                              </a>
+                         </div>
+                    <?php
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
+
+               
+               </div>
+          </div>
+     </div>
+</div>
+</div>
+
+
+
+<style type="text/css">
+     #owl-demo{
+          background:#fff;
+     }
+     
+     #owl-demo .item{
+          margin:20px 0 0 0;
+     }
+     
+     #owl-demo .item img{
+          margin:0 !important;
+          display: block;
+          width: 100%;
+          height: 500px;
+          padding:0px !important;
+          background:#fff;
+          box-shadow:none;
+          -webkit-box-shadow:none;
+          -moz-box-shadow:none;
+     }
+
+     .owl-carousel h1{
+          width:auto;
+          font-size:28px;
+          line-height:27px;
+          position:absolute;
+          background-color: rgba(0,0,0,0.3);
+          padding:10px 20px;
+          color:#fff;
+          margin:-200px 0 0 0;
+     }
+     
+     .owl-carousel p{
+          width:50%;
+          font-size:0.9em;
+          position:absolute;
+          padding:10px 20px;
+          color:#fff;
+          background-color: rgba(0,0,0,0.6);
+          margin:-150px 0 0 0;
+     }
+</style>
+
+
 
 <div class="container">
  <div id="row maincontent">
@@ -121,7 +208,10 @@ get_header(); ?>
 <!-- /content-out -->
 </div>
 
-<?php get_sidebar(); ?>
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+  
+
+     
   

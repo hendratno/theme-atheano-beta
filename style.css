@@ -5941,6 +5941,61 @@ input, button, select, textarea {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease; }
 
+/* SLIDER */
+#slidearea {
+  height: 170px;
+  overflow: hidden;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  position: relative;
+  width: 560px;
+  border: solid 1px #cccccc;
+  background: #ededed; }
+
+#gallerycover {
+  overflow: hidden;
+  margin: 0px 20px 0px 0px; }
+
+.mygallery {
+  overflow: hidden;
+  position: relative; }
+
+.mytext img {
+  float: left; }
+
+.mytext {
+  position: relative;
+  margin: 0px 5px 0px 5px;
+  height: 240px;
+  display: inline;
+  float: left;
+  color: #c4c4c4; }
+
+.mytext h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic; }
+
+.mytext h2 a:link, .mytext h2 a:visited {
+  color: #006b97;
+  text-decoration: none; }
+
+.mytext p {
+  padding: 0px 0px;
+  color: #555;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  text-shadow: 1px 1px 0px #f6f6f6; }
+
+.nextb {
+  float: right; }
+
+.prevb {
+  float: left; }
+
 #sidebar li a {
   color: #000000;
   text-decoration: none; }

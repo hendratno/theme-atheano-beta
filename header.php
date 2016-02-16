@@ -18,12 +18,23 @@
 		<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>
 	</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 <link href="<?php bloginfo('template_url');?>/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url');?>/owl-carousel/owl.theme.css" rel="stylesheet">	
+    
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php if ( is_singular() && get_option( 'thread_comments' ) )
 	wp_enqueue_script( 'comment-reply' );
 	wp_head();
+
+	if (is_home()) {
+		  wp_enqueue_script('jquery');
+		  wp_enqueue_script('easing', get_stylesheet_directory_uri() . '/js/jquery.easing.1.1.js');
+		  wp_enqueue_script('carousal', get_stylesheet_directory_uri() . '/js/jcarousel.js');
+		}
 	?>
+
+
 
 </head>
 <body>
@@ -54,5 +65,7 @@
 		<div class="container desnam">
 			<h1 class="blogtitle"><?php bloginfo( 'name' );?></h1>
 			<p class="description"><?php bloginfo( 'description' ); ?></p>
+
+			
 		</div>
 		</div>
