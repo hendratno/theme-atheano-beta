@@ -31,10 +31,7 @@ get_header(); ?>
 	     		<p><?php the_content(); ?></p>
 	     		
      		</div>
-     		<?php comments_template(); ?>
-     	<?php endwhile; ?>
-     <?php endif;?>
-     <!--QUERIES home -->
+                <!--QUERIES home -->
                <div class="home-columns col-md-12">
                     <div class="row clearfix">
 
@@ -51,14 +48,12 @@ get_header(); ?>
 
                                    <div class="one-half col-md-4">
                                    <?php
-                                        if (!is_single()) {
                                         if ( has_post_thumbnail() ) {
                                         the_post_thumbnail("medium");
                                         }else {
                                         echo '<img src="'.get_bloginfo('template_url').'/images/thumbnail.png"alt="'.get_the_title().'" class="wp-post-gambar"/>';
                                          }             
-                                        }
-                                   ?>
+                                   ?>  
 
                                    <h2 class="title-querie"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                    </div> <!-- one-half -->
@@ -82,15 +77,15 @@ get_header(); ?>
                                    
                                    <!-- Post Thumbnail -->
                                    <div class="one-half last col-md-4">
-                                   <?php
-                                        if (!is_single()) {
+                                   <?php                                       
                                         if ( has_post_thumbnail() ) {
                                         the_post_thumbnail("medium");
                                         }else {
                                         echo '<img src="'.get_bloginfo('template_url').'/images/thumbnail.png"alt="'.get_the_title().'" class="wp-post-gambar"/>';
-                                         }             
-                                        }
+                                         }                                        
                                    ?>
+
+
                                    <h2 class="title-querie"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                    </div><!-- one-half -->
                                    <?php endwhile;
@@ -102,6 +97,12 @@ get_header(); ?>
                     
                     </div>
                </div><!-- home -->
+     		<?php comments_template(); ?>
+     	<?php endwhile; ?>
+     <?php endif;?>
+
+
+    
  </div>
  </div>
 
