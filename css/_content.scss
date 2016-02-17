@@ -1,8 +1,16 @@
+.container {
+	padding-left: 0;
+
 .content-post {
 	border-right: 1px solid rgba(204, 204, 204, 0.29);
+	padding-left: 0;
+	font-family: $font-content;
+	
+
 
 	p {
-		line-height: 26px;
+		line-height: 1.9em;
+		font-size: 15px !important;
 
 			#read-more {
 				text-decoration: none;
@@ -90,6 +98,7 @@
 	}
 }
 
+}
 /* SLIDER */
 
 #slidearea{

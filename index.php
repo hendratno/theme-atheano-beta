@@ -95,7 +95,7 @@ get_header(); ?>
 <div class="container">
  <div id="row maincontent">
     <div id="content col-md-8">
-    	<div class="content-post col-md-9">
+    	<div class="content-post col-md-8">
      <?php if ( have_posts() ) : ?>
      	<?php while ( have_posts() ) : the_post(); ?>
      		<div id="post-<?php the_ID(); ?>" <?php post_class("clearfix"); ?>>

@@ -1,5 +1,5 @@
 <div id="sidebar">
-  <div class="col-md-3">
+  <div class="col-md-4">
     <?php if ( is_active_sidebar( 'sidebar-lebar' ) ) : ?>  
       <div id="lebar">
           <ul>          

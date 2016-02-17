@@ -13,6 +13,7 @@
   }
  </style>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title>
 		<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>
