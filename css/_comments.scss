@@ -40,7 +40,6 @@ input, button, select, textarea {
     margin-top: 31px;
 
     h4 {
-    	background-color: $black;
     	color: $white;
     	padding: 15px;
     	text-align: center;
@@ -71,4 +70,8 @@ input, button, select, textarea {
 			font-style: normal;
 		}
 	}
+}
+
+.content-post {
+    margin-bottom: 200px;
 }
