@@ -1,20 +1,20 @@
-.post-bottom-section {
-    background-color: $black;
+.post-bottom-section {    
+    background-color: $white;
     padding: 13px;
 
     h4 {
     	margin-top: 36px;
-    	color: $white;
+    	color: $black;
     }
 }
 
 label {
-	color: $white;
+	color: $black;
 	margin-top: 7px;
 }
 
 input, text {
-	width: 20%;
+	width: 26%;
 	margin-top: 10px;
 	height: 40px;
 	text-transform: uppercase;
@@ -40,14 +40,13 @@ input, button, select, textarea {
     margin-top: 31px;
 
     h4 {
-    	color: $white;
+    	color: $black;
     	padding: 15px;
     	text-align: center;
     	text-transform: uppercase;
 
     	span {
-    		letter-spacing: 0.15em;
-    		border: 1px solid $white;
+    		border: 1px solid $black;
     		padding: 6px 260px;
     	}
     }
@@ -74,4 +73,12 @@ input, button, select, textarea {
 
 .content-post {
     margin-bottom: 200px;
+}
+
+.clearfix {
+    background-color: $white;
+}
+
+.last {
+    margin-bottom: 30px;
 }

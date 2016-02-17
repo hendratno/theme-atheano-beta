@@ -5800,18 +5800,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .post-bottom-section {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 13px; }
   .post-bottom-section h4 {
     margin-top: 36px;
-    color: #ffffff; }
+    color: #000000; }
 
 label {
-  color: #ffffff;
+  color: #000000;
   margin-top: 7px; }
 
 input, text {
-  width: 20%;
+  width: 26%;
   margin-top: 10px;
   height: 40px;
   text-transform: uppercase; }
@@ -5832,13 +5832,12 @@ input, button, select, textarea {
   padding: 10px;
   margin-top: 31px; }
   .post-bottom-section1 h4 {
-    color: #ffffff;
+    color: #000000;
     padding: 15px;
     text-align: center;
     text-transform: uppercase; }
     .post-bottom-section1 h4 span {
-      letter-spacing: 0.15em;
-      border: 1px solid #ffffff;
+      border: 1px solid #000000;
       padding: 6px 260px; }
 
 .commentlist {
@@ -5857,6 +5856,12 @@ input, button, select, textarea {
 
 .content-post {
   margin-bottom: 200px; }
+
+.clearfix {
+  background-color: #ffffff; }
+
+.last {
+  margin-bottom: 30px; }
 
 #header .navbar-default {
   background-color: #000000; }
