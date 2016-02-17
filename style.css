@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5844,7 +5845,7 @@ input, button, select, textarea {
   list-style: none;
   border: 1px solid #000000;
   padding: 12px;
-  background-color: #000000; }
+  background-color: #ffffff; }
   .commentlist .comment-body {
     border: 1px solid #000000;
     padding: 5px;
@@ -6008,7 +6009,8 @@ input, button, select, textarea {
 
 #sidebar li a {
   color: #000000;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Oswald", sans-serif; }
 #sidebar #lebar ul {
   text-decoration: none;
   list-style: none; }
