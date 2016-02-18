@@ -5838,20 +5838,21 @@ input, button, select, textarea {
     text-align: center;
     text-transform: uppercase; }
     .post-bottom-section1 h4 span {
-      border: 1px solid #000000;
       padding: 6px 260px; }
 
 .commentlist {
   list-style: none;
   border: 1px solid #000000;
   padding: 12px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  box-shadow: 0 0 8px; }
   .commentlist .comment-body {
     border: 1px solid #000000;
     padding: 5px;
     margin: 5px;
-    background-color: #333;
-    color: #ffffff; }
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 8px; }
     .commentlist .comment-body .fn {
       font-style: normal; }
 
@@ -5863,6 +5864,9 @@ input, button, select, textarea {
 
 .last {
   margin-bottom: 30px; }
+
+ul.children {
+  list-style: none; }
 
 #header .navbar-default {
   background-color: #000000; }
@@ -6010,7 +6014,7 @@ input, button, select, textarea {
 #sidebar li a {
   color: #000000;
   text-decoration: none;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", sans-serif; }
 #sidebar #lebar ul {
   text-decoration: none;
   list-style: none; }
@@ -6074,6 +6078,17 @@ td {
 th {
   text-align: center;
   background-color: #000; }
+
+#recentcomments {
+  letter-spacing: 0.01em; }
+  #recentcomments li.recentcomments {
+    margin-bottom: 20px; }
+
+div#calendar_wrap {
+  letter-spacing: 7px; }
+  div#calendar_wrap table#wp-calendar {
+    line-height: 1.9;
+    text-align: center; }
 
 .threepost {
   border: solid 1px #333; }

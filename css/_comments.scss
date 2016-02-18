@@ -46,7 +46,6 @@ input, button, select, textarea {
     	text-transform: uppercase;
 
     	span {
-    		border: 1px solid $black;
     		padding: 6px 260px;
     	}
     }
@@ -57,13 +56,15 @@ input, button, select, textarea {
 	border: 1px solid $black;
 	padding: 12px;
 	background-color: $white;
+    box-shadow: 0 0 8px;
 
 	.comment-body {
 		border: 1px solid $black;
 		padding: 5px;
 		margin: 5px;
-		background-color: #333;
-		color: $white;
+		background-color: $white;
+		color: $black;
+        box-shadow: 0 0 8px;
 
 		.fn {
 			font-style: normal;
@@ -81,4 +82,8 @@ input, button, select, textarea {
 
 .last {
     margin-bottom: 30px;
+}
+
+ul.children {
+    list-style: none;
 }
