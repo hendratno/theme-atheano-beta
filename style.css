@@ -6073,15 +6073,31 @@ ul.children {
       color: #ffffff !important; }
 
 td {
-  padding: 5px; }
+  padding: 5px;
+  border: 1px solid #000000; }
+
+td#prev a {
+  background-color: #ffffff; }
+  td#prev a:hover {
+    background-color: #000000;
+    color: #000000; }
 
 th {
   text-align: center;
-  background-color: #000; }
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+  font-weight: normal; }
 
 #recentcomments {
-  letter-spacing: 0.01em; }
+  letter-spacing: 0.01em;
+  font-weight: bold; }
   #recentcomments li.recentcomments {
+    margin-bottom: 20px; }
+
+.widget_recent_entries ul {
+  letter-spacing: 1;
+  font-weight: bold; }
+  .widget_recent_entries ul li {
     margin-bottom: 20px; }
 
 div#calendar_wrap {
@@ -6089,6 +6105,12 @@ div#calendar_wrap {
   div#calendar_wrap table#wp-calendar {
     line-height: 1.9;
     text-align: center; }
+    div#calendar_wrap table#wp-calendar caption {
+      text-align: center;
+      font-size: 24; }
+
+tbody {
+  background-color: #F7F7F7 !important; }
 
 .threepost {
   border: solid 1px #333; }

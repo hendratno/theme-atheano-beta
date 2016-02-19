@@ -106,21 +106,54 @@
 
 // Khusus sidebar pencarian
 // ======================================================================================
+
+// Calender
+// ======================================================================================
 td {
 	padding: 5px;
-}
+	border: 1px solid $black;
+}	
+
+	td#prev a{
+		background-color: $white;
+&:hover {
+			background-color: $black;		
+			color: $black
+			
+		}
+	}
+
 
 th {
     text-align: center;
-    background-color: #000;
+    background-color: $white;
+    border-bottom: 1px solid $black;
+    font-weight: normal;
    }
+
+// Calender
+// ======================================================================================
 
 //Recent Commments 
 //==========================================================================================
 #recentcomments {
 	letter-spacing: 0.01em;
+	font-weight: bold;
 
-	li.recentcomments {
-		margin-bottom: 20px;
+		li.recentcomments {
+			margin-bottom: 20px;
+		}
 	}
-}
+
+
+.widget_recent_entries {
+	
+	ul {
+		letter-spacing: 1;
+    	font-weight: bold;
+
+		li {
+			margin-bottom: 20px;
+		}
+	}
+	}
