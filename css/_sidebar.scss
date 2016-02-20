@@ -114,15 +114,17 @@ td {
 	border: 1px solid $black;
 }	
 
-	td#prev a{
+	td#prev {
 		background-color: $white;
-&:hover {
-			background-color: $black;		
-			color: $black
-			
+
+		&:hover {
+			background-color: $black;
+
+			a {
+				color: $white;
+			}
 		}
 	}
-
 
 th {
     text-align: center;
